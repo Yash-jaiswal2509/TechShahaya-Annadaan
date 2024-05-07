@@ -1,0 +1,122 @@
+.donate-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.donate-cards-container {
+    display: flex;
+    gap: 2vw;
+}
+
+.donate-card {
+    display: flex;
+    width: 30vw;
+    height: 40vh;
+    box-shadow: 0 0 15px 2px #653a2090;
+    border-radius: 1vw;
+    background-color: #ffd4b986;
+    color: #653B20;
+}
+
+.donate-card img {
+    height: 100%;
+    width: 50%;
+    border-radius: 1vw 0 0 1vw;
+}
+
+.donate-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.donate-card-info h3 {
+    margin: 0%;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+
+.donate-card-info p {
+    margin: 0;
+    text-align: center;
+}
+
+.star-rating {
+    margin: 5% 15%;
+}
+
+.star-rating i {
+    color: gold;
+    filter: drop-shadow(0 0 1px gold);
+}
+
+.available {
+    margin-left: 10%;
+    gap: 5%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgba(0, 128, 0, 0.8);
+    filter: drop-shadow(0 0 1px green);
+}
+.available h5{
+    margin: 0;
+}
+.donate-card-info button {
+    border: 0;
+    outline: 0;
+    width: 80%;
+    height: 15%;
+    background-color: #653B20;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.donate-card-info button:hover {
+    text-shadow: 1px 1px 10px white;
+}
+
+.quantity {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.quantity button {
+    width: 20%;
+    height: 125%;
+}
+
+.quantity input {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    color: #653B20;
+    font-weight: 600;
+    border: 2px solid #653B20;
+}
+
+
+  /* ---------------Media-querry------------ */
+
+@media (max-width:780px) {
+    .donate-card-info h3{
+      font-size: 18px;
+    }
+
+    .donate-card-info p {
+        font-size: 12px;
+    }
+
+    .donate-card-info button{
+        font-size: 12px;
+    }
+  }

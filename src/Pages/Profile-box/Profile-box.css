@@ -1,0 +1,143 @@
+#profile-box {
+    display: none;
+}
+
+#profile-boxactive {
+    z-index: 100;
+    position: absolute;
+    height: 95%;
+    width: 300px;
+    background-color: #ffd4b9;
+    top: 4%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s;
+    border-radius: 16px;
+}
+
+#upper-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#upper-box .userName {
+    margin-right: 100px;
+}
+
+#upper-box img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#upper-box .cancel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#upper-box h2 {
+    color: #653B20;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#upper-box h5 {
+    margin: 0;
+    margin-top: 5px;
+    color: #653B20;
+    font-size: 16px;
+    text-align: center;
+}
+
+#middle-box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#middle-box ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    gap: 5px;
+    padding-inline-start: 0;
+    list-style-position: inside;
+}
+
+#middle-box ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 220px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 600;
+    color: #d88b5c;
+    cursor: pointer;
+}
+
+#middle-box ul li:hover {
+    color: #653B20;
+    transition: all 0.5s;
+}
+
+#middle-box ul:not(.inside-profile-box-service)::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #653B20;
+    margin-top: 20px;
+}
+
+#middle-box ul li img{
+    height: 20px;
+    width: 20px;
+}
+
+
+#lower-box {
+    gap: 10px;
+}
+
+#lower-box button {
+    margin: 0;
+    border: 2px solid #653B20;
+    width: 88px;
+    height: 46px;
+    background: transparent;
+    color: #653B20;
+    margin-inline: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#lower-box button:hover {
+    border: 2px solid white;
+    background: #653B20;
+    color: white;
+    transition: all 0.5s;
+}
+
+#lower-box button:first-child {
+    margin-top: 16px;
+}
+
+.inside-profile-box-service li{
+    margin-left: 20%;
+}
+      
